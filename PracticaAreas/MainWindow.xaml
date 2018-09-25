@@ -1,0 +1,75 @@
+﻿<Window x:Class="PracticaAreas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaAreas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" MinWidth="550" MinHeight="500">
+    <StackPanel Margin="10,0,0,0">
+        <TextBlock FontSize="24">Áreas de Figuras geométricas</TextBlock>
+        <StackPanel Margin="0,0,0,15">
+            <TextBlock FontSize="19">Rectangulo:</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>base:</TextBlock>
+                <TextBlock Margin="150,0,0,0">altura:</TextBlock>
+                <TextBlock Margin="230,0,0,0">área:</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="tbxBaseR" Width="120" HorizontalAlignment="Left" Text="0"></TextBox>
+                <TextBox Name="tbxAlturaR" Width="120" HorizontalAlignment="Left" Margin="58,0,0,0" Text="0"></TextBox>
+                <Button Name="btnUnoCR" Click="btnUnoCR_Click" Width="60" Margin="43,0,0,0">Calcular</Button>
+                <TextBlock Name="tbkAreaR" Margin="39,0,0,0" Text="0.0"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Margin="0,0,0,15">
+            <TextBlock FontSize="19">Triángulo:</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>base:</TextBlock>
+                <TextBlock Margin="150,0,0,0">altura:</TextBlock>
+                <TextBlock Margin="230,0,0,0">área:</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="tbxBaseTri" Width="120" HorizontalAlignment="Left" Text="0"></TextBox>
+                <TextBox Name="tbxAlturaTri" Width="120" HorizontalAlignment="Left" Margin="58,0,0,0" Text="0"></TextBox>
+                <Button Name="btnAreaTri" Click="btnAreaTri_Click" Width="60" Margin="43,0,0,0">Calcular</Button>
+                <TextBlock Name="tbkAreaTri" Margin="39,0,0,0" Text="0.0"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Margin="0,0,0,15">
+            <TextBlock FontSize="19">Círculo:</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>radio:</TextBlock>
+
+                <TextBlock Margin="410,0,0,0">área:</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="tbxRadioC" Width="120" HorizontalAlignment="Left" Text="0"></TextBox>
+                <Button Name="btnAreaC" Click="btnAreaC_Click" Width="60" Margin="221,0,0,0">Calcular</Button>
+                <TextBlock Name="tbkAreaC" Margin="39,0,0,0" Text="0.0"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Margin="0,0,0,15">
+            <TextBlock FontSize="19">Trapecio:</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>base mayor:</TextBlock>
+                <TextBlock Margin="114,0,0,0">base menor:</TextBlock>
+                <TextBlock Margin="197,0,0,0">área:</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="tbxBaseMT" Width="120" HorizontalAlignment="Left" Text="0"></TextBox>
+                <TextBox Name="tbxBaseMrT" Width="120" HorizontalAlignment="Left" Margin="58,0,0,0" Text="0"></TextBox>
+                <Button Name="btnAreaTra" Click="btnAreaTra_Click" Width="60" Margin="43,0,0,0">Calcular</Button>
+                <TextBlock Name="tbkAreaTra" Margin="39,0,0,0" Text="0.0"></TextBlock>
+            </StackPanel>
+            <TextBlock Margin="0,10,0,0">altura:</TextBlock>
+            <TextBox Name="tbxAlturaTra" Width="120" HorizontalAlignment="Left" Text="0"></TextBox>
+        </StackPanel>
+
+
+
+    </StackPanel>
+</Window>
