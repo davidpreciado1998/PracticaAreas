@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="PracticaAreas.ControlAreaCirculo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PracticaAreas"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel Background="White">
+        <TextBlock FontSize="19" Margin="0,0,18,0"><Run Text="Círculo:"/></TextBlock>
+        <StackPanel Orientation="Horizontal" Margin="0,0,18,0">
+            <TextBlock><Run Text="radio:"/></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,0,18,0">
+            <TextBox x:Name="tbxRadioC" Width="120" HorizontalAlignment="Left"/>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>
