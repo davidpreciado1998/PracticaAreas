@@ -27,18 +27,12 @@ namespace PracticaAreas
 
         private void btnUnoCR_Click(object sender, RoutedEventArgs e)
         {
-            /*int aux = int.Parse(tbxBaseR.Text);
-            int aux2 = int.Parse(tbxAlturaR.Text);
-            int aux3 = aux*aux2;
-            tbkAreaR.Text = aux3.ToString();*/
+            
         }
 
         private void btnAreaTri_Click(object sender, RoutedEventArgs e)
         {
-            /*int aux = int.Parse(tbxBaseTri.Text);
-            int aux2 = int.Parse(tbxAlturaTri.Text);
-            int aux3 = (aux * aux2)/2;
-            tbkAreaTri.Text = aux3.ToString();*/
+           
         }
 
         private void btnAreaC_Click(object sender, RoutedEventArgs e)
@@ -85,8 +79,16 @@ namespace PracticaAreas
             switch (cbTipoFigura.SelectedIndex)
             {
                 case 0: //Rectangulo
+                    var ControlAreaRectangulo = (ControlAreaRectangulo)panelConfiguracion.Children[0];
+                    int aux = int.Parse(ControlAreaRectangulo.tbxBaseR.Text);
+                    int aux2 = int.Parse(ControlAreaRectangulo.tbxAlturaR.Text);
+                    area = aux*aux2;
                     break;
                 case 1: //Triangulo
+                    var ControlAreaTriangulo = (ControlAreaTriangulo)panelConfiguracion.Children[0];
+                    aux = int.Parse(ControlAreaTriangulo.tbxAlturaTri.Text);
+                    aux2 = int.Parse(ControlAreaTriangulo.tbxAlturaTri.Text);
+                    area = (aux * aux2)/2;
                     break;
                 case 2: //Circulo
                     break;
