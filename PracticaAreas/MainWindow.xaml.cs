@@ -37,18 +37,11 @@ namespace PracticaAreas
 
         private void btnAreaC_Click(object sender, RoutedEventArgs e)
         {
-            /*double aux = double.Parse(tbxRadioC.Text);
-            aux = (aux*aux) * 3.14;
-            tbkAreaC.Text = aux.ToString();*/
         }
 
         private void btnAreaTra_Click(object sender, RoutedEventArgs e)
         {
-           /* int aux = int.Parse(tbxBaseMT.Text);
-            int aux2 = int.Parse(tbxBaseMrT.Text);
-            int aux3 = int.Parse(tbxAlturaTra.Text);
-            int aux4 = (aux+aux2)/2*aux3;
-            tbkAreaTra.Text = aux4.ToString();*/
+          
         }
 
         private void cbTipoFigura_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -91,8 +84,18 @@ namespace PracticaAreas
                     area = (aux * aux2)/2;
                     break;
                 case 2: //Circulo
+                    var ControlAreaCirculo = (ControlAreaCirculo)panelConfiguracion.Children[0];
+                    double auxi = double.Parse(ControlAreaCirculo.tbxRadioC.Text);
+                    auxi = (auxi*auxi) * 3.14;
+                    area = auxi;
                     break;
                 case 3: //Trapecio
+                    var ControlAreaTrapecio = (ControlAreaTrapecio)panelConfiguracion.Children[0];
+                    aux = int.Parse(ControlAreaTrapecio.tbxBaseMT.Text);
+                        aux2 = int.Parse(ControlAreaTrapecio.tbxBaseMrT.Text);
+                       int aux3 = int.Parse(ControlAreaTrapecio.tbxAlturaTra.Text);
+                       int aux4 = (aux+aux2)/2*aux3;
+                       area = aux4;
                     break;
                 default:
                     break;
